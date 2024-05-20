@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'notificacion',
+    loadComponent: () => import('./Pagina/notificacion/notificacion.page').then( m => m.NotificacionPage)
+  },
 ];
